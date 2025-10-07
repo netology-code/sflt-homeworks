@@ -1,3 +1,4 @@
+
 # Домашнее задание к занятию 2 «Кластеризация и балансировка нагрузки»
 **Косарев Д.О.**
 
@@ -5,7 +6,7 @@
 
 ### Конфигурационный файл HAProxy:
 
-```cfg
+\`\`\`cfg
 global
     daemon
     maxconn 256
@@ -24,17 +25,15 @@ backend http_back
     balance roundrobin
     server web1 127.0.0.1:8001 check
     server web2 127.0.0.1:8002 check
+\`\`\`
 
 ![Скриншот работы HAProxy](images/Screenshot%20from%202025-10-07%2023-19-21.png)
-EOF
-
-
 
 ## Задание 2
 
 ### Конфигурационный файл HAProxy:
 
-```cfg
+\`\`\`cfg
 global
     daemon
     maxconn 256
@@ -60,7 +59,12 @@ backend http_back
 
 backend no_match
     errorfile 503 /etc/haproxy/errors/404.http
+\`\`\`
 
-- `![Скриншот 1](images/Screenshot%20from%202025-10-07%2023-27-26.png)`
-- `![Скриншот 2](images/Screenshot%20from%202025-10-07%2023-34-13.png)`
-- `![Скриншот 3](images/Screenshot%20from%202025-10-07%2023-42-05.png)`
+### Скриншоты работы:
+
+![Скриншот 1](images/Screenshot%20from%202025-10-07%2023-27-26.png)
+
+![Скриншот 2](images/Screenshot%20from%202025-10-07%2023-34-13.png)
+
+![Скриншот 3](images/Screenshot%20from%202025-10-07%2023-42-05.png)
