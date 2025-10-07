@@ -1,8 +1,11 @@
 # Домашнее задание к занятию 3 «Резервное копирование» Косарев Д.О.
 
 ## Задание 1
+\`\`\`bash
 rsync -avh --checksum --exclude='.*' /home/kosarev/ /tmp/backup/
-![Screenshot from 2025-10-07 21-27-22.png](./Screenshot from 2025-10-07 21-27-22.png)
+\`\`\`
+
+![Результат выполнения rsync](./Screenshot%20from%202025-10-07%2021-27-22.png)
 
 ## Задание 2
-![Screenshot from 2025-10-07 21-41-50.png](./Screenshot from 2025-10-07 21-41-50.png)
+![Результат работы скрипта](./Screenshot%20from%202025-10-07%2021-41-50.png)
